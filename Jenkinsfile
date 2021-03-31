@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'echo "New Try 2"'
+        sh 'echo "New Try"'
         withSonarQubeEnv(installationName: 'Sonarcube', credentialsId: 'id') {
           waitForQualityGate(abortPipeline: true, credentialsId: 'id')
         }
