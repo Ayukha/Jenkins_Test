@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('Build 2') {
+      steps {
+        sh 'echo "Hellooooo"'
+      }
+    }
+
   }
 }
